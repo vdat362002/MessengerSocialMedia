@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-y: hidden;
+}
+
+.abcRioButtonBlue {
+  border-radius: 50% !important;
+  background: rgb(243 244 246) !important;
+  height: 52px !important;
+}
+
+.abcRioButtonIcon {
+  background: rgb(243 244 246) !important;
+}
+
+.abcRioButtonContents {
+  width: 0;
+  display: none;
+}
+
+#fb-login {
+  width: 50px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  border-radius: 50%;
+}
+
+#fb-login:hover {
+  box-shadow: none !important;
+}
+
+#fb-login img {
+  border-radius: 50%;
+}
+
+#fb-login span {
+  display: none !important;
+}
+
+.message-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 10px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background: #cecece;
+  border-radius: 10px;
+}
+
+.contact-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.contact-container::-webkit-scrollbar {
+  display: none;
+}
+
+.Toastify__toast-container {
+  z-index: 99999;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-20px);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
