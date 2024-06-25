@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 axios.defaults.baseURL = process.env.REACT_APP_SocialMedia_URL;
+axios.defaults.withCredentials = true;
 
 export const getDataAPI = async(url, accessToken) => {
   const res = await axios.get(`/api/v1/${url}`, {
