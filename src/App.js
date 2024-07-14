@@ -38,9 +38,7 @@ const App = () => {
   }, [dispatch])
 
   useEffect(() => {
-    const peer = new Peer(undefined, {
-      path: '/', secure: true
-    })
+    const peer = new Peer();
 
     dispatch({ type: GLOBAL_TYPES.PEER, payload: peer })
   }, [dispatch])
