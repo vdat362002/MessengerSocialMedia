@@ -32,7 +32,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(refreshToken())
-    const socket = io()
+    const socket = io(process.env.REACT_APP_MESSAGE_URL)
     dispatch({ type: GLOBAL_TYPES.SOCKET, payload: socket })
     return () => socket.close()
   }, [dispatch])
